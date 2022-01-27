@@ -1,6 +1,16 @@
 const mix = (firstArray, secondArray) => {
     let finalString = []
-    for (let i = 0; i<firstArray.length; i++) {
+    let longestString = (firstArray, secondArray) => {
+        if(firstArray.length > secondArray.length){
+            longestString = firstArray
+        } else {
+            longestString = secondArray
+        }
+        console.log(longestString)
+        return longestString
+    }
+    
+    for (let i = 0; i<=longestString.length; i++) {
         finalString.push(firstArray[i])
         finalString.push(secondArray[i])
         }
