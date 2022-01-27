@@ -1,24 +1,22 @@
+//2. Evenly mix two arrays
 const mix = (firstArray, secondArray) => {
     let finalString = []
     let longestString = (firstArray, secondArray) => {
-        if(firstArray.length > secondArray.length){
-            longestString = firstArray
-        } else {
-            longestString = secondArray
-        }
-        console.log(longestString)
+        firstArray.length > secondArray.length ? (longestString.push(firstArray)) : (longestString.push(secondArray));
         return longestString
     }
-    
-    for (let i = 0; i<=longestString.length; i++) {
+
+    for (let i = 0; i <= longestString.length; i++) {
         finalString.push(firstArray[i])
         finalString.push(secondArray[i])
-        }
-        return finalString
     }
+    return finalString
+}
 
 
-console.log(mix([ 1, 2, 3 ], [4, 5, 6]))
+console.log(mix([
+    1, 2, 3
+], [4, 5, 6]))
 // [1, 4, 2, 5, 3, 6]
 console.log(mix([
     "h", "a", "c"
