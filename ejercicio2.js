@@ -2,7 +2,7 @@
 const mix = (firstArray, secondArray) => {
     let finalString = []
     let longestString = (firstArray, secondArray) => {
-        firstArray.length > secondArray.length ? (longestString.push(firstArray)) : (longestString.push(secondArray));
+        firstArray.length > secondArray.length ? longestString.push(firstArray) : longestString.push(secondArray);
         return longestString
     }
 
