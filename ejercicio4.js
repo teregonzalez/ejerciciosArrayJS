@@ -1,8 +1,11 @@
 const findOddOneOut = (someArray) => {
 
-    return unique = someArray.filter((item, i, ar) => ar.indexOf(item) === i);
-
-    //console.table(someArray.filter((element, index, someArray) => someArray.indexOf(element) === index));
+    for (let i = 0; i < someArray.length; i++) {
+        const count = someArray.filter(value => value === someArray[i]).length;
+        if (count == 1) {
+            return someArray[i];
+        }
+    }
 }
 console.log(findOddOneOut(["a", "a", "b", "a"])) // b
-console.log(findOddOneOut(["c", "a", "a", "a"])) // b
+console.log(findOddOneOut(["c", "a", "a", "a"])) // c
