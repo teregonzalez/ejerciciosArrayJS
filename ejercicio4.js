@@ -1,11 +1,8 @@
 const findOddOneOut = (someArray) => {
-    let oddNumber=""
-    for (let element in someArray) {
-        if(!someArray){
-            let oddNumber = someArray[i]
-        }
-    }
-    console.log(oddNumber)
-}
 
+    return unique = someArray.filter((item, i, ar) => ar.indexOf(item) === i);
+
+    //console.table(someArray.filter((element, index, someArray) => someArray.indexOf(element) === index));
+}
 console.log(findOddOneOut(["a", "a", "b", "a"])) // b
+console.log(findOddOneOut(["c", "a", "a", "a"])) // b
