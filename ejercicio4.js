@@ -2,7 +2,7 @@ const findOddOneOut = (someArray) => {
 
     for (let i = 0; i < someArray.length; i++) {
         const count = someArray.filter(value => value === someArray[i]).length;
-        if (count == 1) {
+        if (count === 1) {
             return someArray[i];
         }
     }

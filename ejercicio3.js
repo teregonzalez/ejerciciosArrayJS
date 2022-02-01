@@ -12,7 +12,7 @@ const orderBySum = (someArray) => {
     const sortedArray = sumArray.sort(((a,b) => a.sumatoria - b.sumatoria))
     //console.log(sortedArray)
     finalArray = sortedArray.map(item => item.arreglo)
-    console.log(finalArray)
+    return finalArray
 }
 console.log(orderBySum([[1,3], [4,2], [2,1]]))
 // [[2,1], [1,3], [4,2]]
