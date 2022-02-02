@@ -1,6 +1,11 @@
 //Build a new array by indexes
 const buildArray = (someArray, indexes) => {
-    // your code
+    const finalArray = []
+    indexes.forEach(element => {
+        finalArray.push(someArray[element])
+    });
+
+    return finalArray;
 }
 
 console.log(buildArray(["mon", "tue", "wed", "thur", "fri"], [1, 3, 4])) 
