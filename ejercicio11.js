@@ -2,9 +2,10 @@
 const sortTheArray = (someArray) => {
     let numberArray = []
     let otherArray = []
-    for (let i = 0; i < someArray.length; i++) {
-        
-        }
+    someArray.forEach(element => { 
+        typeof element === 'number' ? numberArray.push(element) : otherArray.push(element)}
+        );
+    return numberArray.sort().concat(otherArray.sort());
     }
 
 console.log(sortTheArray(["b", 6, "a", "q", 7, 2])) 
