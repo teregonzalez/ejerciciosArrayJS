@@ -4,15 +4,19 @@ const splitByOddAndEven = (someArray) => {
     const arrayEven =[]
 
     const uniqueNumbers = [...new Set(someArray)];
+    //creo nuevo array con Set para que guarde elementos unicos
     //console.log(uniqueNumbers)
 
-    for (let i = 0; i < uniqueNumbers.length; i++) {
-        if(uniqueNumbers[i] % 2 === 0){
-            arrayOdd.push(uniqueNumbers[i])
+    uniqueNumbers.forEach(number => {
+        if(number % 2 === 0){
+            arrayOdd.push(number)
+            //Si el residuo de la división por 2 es cero, se guarda el
+            //elemento en arrayOdd
         }else{
-            arrayEven.push(uniqueNumbers[i])
+            arrayEven.push(number)
+            //Si el residuo no es cero, se guarda en arrayEven
         }
-    }
+    })
 return [arrayOdd, arrayEven]
 }
 
