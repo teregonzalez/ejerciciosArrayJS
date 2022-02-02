@@ -5,7 +5,7 @@ const sortTheArray = (someArray) => {
     someArray.forEach(element => { 
         typeof element === 'number' ? numberArray.push(element) : otherArray.push(element)}
         );
-    return numberArray.sort().concat(otherArray.sort());
+    return numberArray.concat(otherArray).sort();
     }
 
 console.log(sortTheArray(["b", 6, "a", "q", 7, 2])) 
