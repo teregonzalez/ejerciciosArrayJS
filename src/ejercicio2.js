@@ -1,11 +1,5 @@
 //2. Evenly mix two arrays
 const mix = (firstArray, secondArray) => {
-    if(typeof firstArray !== "Array"){
-        throw new Error("Error");
-    }
-    if(typeof secondArray !== "Array"){
-        throw new Error("Error");
-    }
 
     let finalString = []
     let longestString = firstArray.concat(secondArray)
