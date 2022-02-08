@@ -3,6 +3,9 @@ const mix = (firstArray, secondArray) => {
     if(!Array.isArray(firstArray)){
         throw new Error("Error");
     }
+    if(!Array.isArray(secondArray)){
+        throw new Error("Error");
+    }
     let finalString = []
     let longestString = firstArray.concat(secondArray)
 

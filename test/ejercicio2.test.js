@@ -26,6 +26,18 @@ describe("Funcion mix", () => {
         expect(expectedResult).toThrowError("Error");
     })
 
+    it("Si secondArray no es un array, tirará error", () => {
+        //arrange
+        const firstArray = [4,4];
+        const secondArray = "Gato";
+
+        //act
+        const expectedResult = () => mix(firstArray, secondArray);
+
+        //assert
+        expect(expectedResult).toThrowError("Error");
+    })
+
     it("Mix sin parametros va a arrojar un error", () => {
         expect(() => mix()).toThrow("Error");
     });
