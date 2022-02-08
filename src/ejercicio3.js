@@ -14,5 +14,9 @@ const orderBySum = (someArray) => {
     finalArray = sortedArray.map(item => item.arreglo)
     return finalArray
 }
-console.log(orderBySum([[1,3], [4,2], [2,1]]))
+
+module.exports = {
+    orderBySum
+}
+//console.log(orderBySum([[1,3], [4,2], [2,1]]))
 // [[2,1], [1,3], [4,2]]
