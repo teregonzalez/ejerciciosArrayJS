@@ -14,4 +14,20 @@ describe("Funcion mix", () => {
         expect(resultado).toStrictEqual(["h", 7, "a", 4, "c", 17, 10, 48]);
     });
 
+    it("Si firstArray no es un array, tirará error", () => {
+        //arrange
+        const firstArray = 33;
+        const secondArray = [2,2];
+
+        //act
+        const expectedResult = () => mix(firstArray, secondArray);
+
+        //assert
+        expect(expectedResult).toThrowError("Error");
+    })
+
+    it("Mix sin parametros va a arrojar un error", () => {
+        expect(() => mix()).toThrow("Error");
+    });
+
 });
