@@ -6,10 +6,10 @@ describe("Función shuffle del ejercicio1", () => {
         const someArray = [10, 12, 15];
 
         //act
-        const resultado = shuffle(someArray);
+        const resultado = shuffle(someArray)
 
         //assert
-        expect(resultado).not.toBe(someArray);
+        expect(resultado.toBe(someArray)).toBe(false)
     });
 
     /*
