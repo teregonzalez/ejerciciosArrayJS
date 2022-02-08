@@ -17,5 +17,3 @@ const shuffle = (someArray) => {
 module.exports = {
   shuffle
 };
-
-console.log(shuffle([10, 12, 15])) // [12, 15, 10]

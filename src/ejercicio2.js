@@ -1,5 +1,12 @@
 //2. Evenly mix two arrays
 const mix = (firstArray, secondArray) => {
+    if(typeof firstArray !== "Array"){
+        throw new Error("Error");
+    }
+    if(typeof secondArray !== "Array"){
+        throw new Error("Error");
+    }
+
     let finalString = []
     let longestString = firstArray.concat(secondArray)
 
@@ -10,7 +17,12 @@ const mix = (firstArray, secondArray) => {
     return finalString
 }
 
+module.exports = {
+    mix
+  };
+/*
 console.log(mix([1, 2, 3 ], [4, 5, 6]))
 // [1, 4, 2, 5, 3, 6]
 console.log(mix(["h", "a", "c" ], [ 7, 4, 17, 10, 48 ]))
 // ["h", 7, "a", 4, "c", 17, 10, 48]
+*/
