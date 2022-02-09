@@ -33,6 +33,11 @@ describe("Función findSmallestAndLargestNumbers", () => {
         //Assert
         expect(resultado).toEqual([2, 28]);
     });
+
+    it("findSmallestAndLargestNumbers sin parámetros va a arrojar un error", () => {
+        //Act and assert
+        expect(() => findSmallestAndLargestNumbers()).toThrow("Error");
+    });
 });
 //console.log(findSmallestAndLargestNumbers([14, 28, 3, 8, 2])) 
 // 2, 28

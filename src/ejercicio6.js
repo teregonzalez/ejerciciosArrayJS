@@ -1,5 +1,13 @@
 //Split the numeric array by odd/even
 const splitByOddAndEven = (someArray) => {
+    if(!Array.isArray(someArray)){
+        throw new Error("Error");
+    }
+    if(someArray.length<2){
+        throw new Error("Error");
+    }
+
+
     const arrayOdd = []
     const arrayEven =[]
 
@@ -17,8 +25,10 @@ const splitByOddAndEven = (someArray) => {
             //Si el residuo no es cero, se guarda en arrayEven
         }
     })
-return [arrayOdd, arrayEven]
+return [arrayOdd.sort(), arrayEven.sort()]
 }
 
-console.log(splitByOddAndEven([2, 3, 7, 6, 2, 4, 9]))
+module.exports = {
+    splitByOddAndEven
+}
 // [[2, 4, 6], [3, 7, 9]]

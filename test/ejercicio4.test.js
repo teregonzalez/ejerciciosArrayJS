@@ -1,26 +1,26 @@
-const {findOddOneOut} = require("../src/ejercicio4");
+const { findOddOneOut } = require("../src/ejercicio4");
 
 describe("Función findOddOneOut", () => {
-    it("Debe retornar 'b' ", () =>{
-    //arrange
-    const someArray = ["a", "a", "b", "a"];
+    it("Debe retornar 'b' ", () => {
+        //arrange
+        const someArray = ["a", "a", "b", "a"];
 
-    //act
-    const resultado = findOddOneOut(someArray);
+        //act
+        const resultado = findOddOneOut(someArray);
 
-    //assert
-    expect(resultado).toBe("b");
+        //assert
+        expect(resultado).toBe("b");
     });
-    
-    it("Para ['c', 'a', 'a', 'a'] debe retornar 'c' ", () =>{
-    //arrange
-    const someArray = ["c", "a", "a", "a"];
 
-    //act
-    const resultado = findOddOneOut(someArray);
+    it("Para ['c', 'a', 'a', 'a'] debe retornar 'c' ", () => {
+        //arrange
+        const someArray = ["c", "a", "a", "a"];
 
-    //assert
-    expect(resultado).toBe("c");
+        //act
+        const resultado = findOddOneOut(someArray);
+
+        //assert
+        expect(resultado).toBe("c");
     });
 
     it("Si le pasamos un string, va a arrojar error", () => {
@@ -43,5 +43,10 @@ describe("Función findOddOneOut", () => {
 
         //assert
         expect(resultado).toThrow("Error");
+    })
+
+    it("findOddOneOut sin parámetros va a arrojar un error", () => {
+        //act and assert
+        expect(() => findOddOneOut()).toThrow("Error");
     })
 });
