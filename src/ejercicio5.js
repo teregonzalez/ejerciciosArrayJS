@@ -7,7 +7,6 @@ const findSmallestAndLargestNumbers = (someArray) => {
     const minNumber = sortedArray[0]
     //console.log(minNumber)
     const maxNumber = sortedArray[sortedArray.length-1]
-    console.log(sortedArray)
     //console.log(maxNumber)
     return [minNumber, maxNumber];
 }

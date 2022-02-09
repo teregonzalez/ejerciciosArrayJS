@@ -11,5 +11,5 @@ const findOddOneOut = (someArray) => {
 module.exports = {
     findOddOneOut
 }
-console.log(findOddOneOut(["a", "a", "b", "a"])) // b
-console.log(findOddOneOut(["c", "a", "a", "a"])) // c
+//console.log(findOddOneOut(["a", "a", "b", "a"])) // b
+//console.log(findOddOneOut(["c", "a", "a", "a"])) // c

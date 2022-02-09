@@ -7,9 +7,9 @@ describe("Función shuffle del ejercicio1", () => {
 
         //act
         const resultado = shuffle(someArray)
-
+        console.log(resultado)
         //assert
-        expect(resultado.toBe(someArray)).toBe(false)
+        expect(resultado).not.toEqual([10, 12, 15])
     });
 
     /*

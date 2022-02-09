@@ -2,5 +2,9 @@
   "dependencies": {
     "install": "^0.13.0",
     "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
   }
 }
+

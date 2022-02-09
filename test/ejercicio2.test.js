@@ -14,6 +14,18 @@ describe("Funcion mix", () => {
         expect(resultado).toStrictEqual(["h", 7, "a", 4, "c", 17, 10, 48]);
     });
 
+    it("Para los arreglos [g, h, k ], [ 7, 4, 17, 10, 9 ] retornara [h, 7, a, 4, c, 17, 10, 48]", () => {
+        //arrange
+        const firstArray = ["g", "h", "k" ];
+        const secondArray = [7,4,17,10,9];
+
+        //act
+        const resultado = mix(firstArray, secondArray);
+
+        //assert
+        expect(resultado).toStrictEqual(["g", 7, "h", 4, "k", 17, 10, 9]);
+    });
+
     it("Si firstArray no es un array, tirará error", () => {
         //arrange
         const firstArray = 33;
@@ -39,6 +51,7 @@ describe("Funcion mix", () => {
     })
 
     it("Mix sin parametros va a arrojar un error", () => {
+        //act and assert
         expect(() => mix()).toThrow("Error");
     });
 
