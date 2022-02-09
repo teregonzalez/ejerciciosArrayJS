@@ -26,6 +26,29 @@ describe("Funcion mix", () => {
         expect(resultado).toStrictEqual(["g", 7, "h", 4, "k", 17, 10, 9]);
     });
 
+    it("Si firstArray tiene menos de 2 elementos, tirará error", () => {
+        //arrange
+        const firstArray = [4];
+        const secondArray = [2,2];
+
+        //act
+        const expectedResult = () => mix(firstArray, secondArray);
+
+        //assert
+        expect(expectedResult).toThrow("Error");
+    });
+
+    it("Si secondArray tiene menos de 2 elementos, tirará error", () => {
+        //arrange
+        const firstArray = [2,3];
+        const secondArray = [1];
+
+        //act
+        const expectedResult = () => mix(firstArray, secondArray);
+
+        //assert
+        expect(expectedResult).toThrow("Error")
+    })
     it("Si firstArray no es un array, tirará error", () => {
         //arrange
         const firstArray = 33;

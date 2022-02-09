@@ -7,20 +7,36 @@ describe("Función shuffle del ejercicio1", () => {
 
         //act
         const resultado = shuffle(someArray)
-        console.log(resultado)
+        //console.log(resultado)
+        
         //assert
         expect(resultado).not.toEqual([10, 12, 15])
     });
 
-    /*
-    it("Shuffle tirara error cuando el input sea un string", () => {
+    it("Si someArray es un string, arrojará error", () => {
         //arrange
         const someArray = "perro";
 
         //act
-        const resultado = shuffle(someArray);
+        const resultado = () => shuffle(someArray)
 
         //assert
-        expect(resultado)
-    })*/
+        expect(resultado).toThrow("Error");
+    });
+
+    it("Si someArray es un número, arrojará error", () => {
+        //arrange
+        const someArray = 90;
+
+        //act
+        const resultado = () => shuffle(someArray)
+
+        //assert
+        expect(resultado).toThrow("Error");
+    });
+
+    it("Mix sin parametros va a arrojar un error", () => {
+        //act and assert
+        expect(() => shuffle()).toThrow("Error");
+    });
 });

@@ -1,6 +1,9 @@
 //3. Order the arrays by sum, ascending or descending
 const orderBySum = (someArray) => {
     
+    if(!Array.isArray(someArray)){
+        throw new Error("Error")
+    }
     //const sumArray= someArray.map(e => e.reduce((a, b) => a + b, 0)).sort()
     const sumArray= someArray.map(e => {
         return {
