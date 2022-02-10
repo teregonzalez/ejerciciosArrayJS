@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644521461386" clover="3.2.0">
-  <project timestamp="1644521461386" name="All files">
-    <metrics statements="113" coveredstatements="113" conditionals="52" coveredconditionals="52" methods="24" coveredmethods="24" elements="189" coveredelements="189" complexity="0" loc="113" ncloc="113" packages="1" files="11" classes="11"/>
+<coverage generated="1644523979565" clover="3.2.0">
+  <project timestamp="1644523979565" name="All files">
+    <metrics statements="125" coveredstatements="125" conditionals="54" coveredconditionals="54" methods="25" coveredmethods="25" elements="204" coveredelements="204" complexity="0" loc="125" ncloc="125" packages="1" files="12" classes="12"/>
     <file name="ejercicio1.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio1.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -34,6 +34,21 @@
       <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
       <line num="11" count="2" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
+    </file>
+    <file name="ejercicio12.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio12.js">
+      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="11" count="4" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
     </file>
     <file name="ejercicio2.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio2.js">
       <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>

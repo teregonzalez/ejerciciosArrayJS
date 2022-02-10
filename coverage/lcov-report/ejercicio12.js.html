@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ejercicio1.js</title>
+    <title>Code coverage report for ejercicio12.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> ejercicio1.js</h1>
+        <h1><a href="index.html">All files</a> ejercicio12.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -83,50 +83,47 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const shuffle = (someArray) =&gt; {
-  if (!Array.isArray(someArray)) {
-    throw new Error("Error");
-  }
-  //let shuffledArray = []
-  //return shuffledArray = someArray.sort((a, b) =&gt; 0.5 - Math.random());
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//Move the element
+const move = (someArray, firstIndex, secondIndex) =&gt; {
+    if(!Array.isArray(someArray)){
+        throw new Error("Error")
+    }
+    const firstElement = someArray[firstIndex];
+    const secondElement = someArray[secondIndex];
+    someArray[secondIndex] = firstElement;
+    someArray[firstIndex] = secondElement;
 &nbsp;
-  for (let i = someArray.length - 1; i &gt; 0; i--) {
-    //recorro el array en inverso
-    const j = Math.floor(Math.random() * (i + 1));
-    //crear posiciones random
-    const temp = someArray[i];
-    someArray[i] = someArray[j];
-    someArray[j] = temp;
-    //toma un item random y lo reemplaza por el que esta siendo iterado
-  }
-  return someArray;
+    return someArray;
 }
-//console.log(shuffle([10, 12, 15]))
+&nbsp;
 module.exports = {
-  shuffle
-};</pre></td></tr></table></pre>
+    move
+}
+&nbsp;
+console.log(move([4, 5, 7], 2, 1)) // [4, 7, 5]
+console.log(move([4, 5, 7], 0, 1)) // [ 5, 4, 7]
+console.log(move([4, 5, 7], 0, 2)) // [ 7, 5, 4]
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

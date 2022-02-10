@@ -10,7 +10,8 @@ describe("Función shuffle del ejercicio1", () => {
         //console.log(resultado)
         
         //assert
-        expect(resultado).not.toEqual([10, 12, 15])
+        expect(resultado.length).toBe(3);
+        expect(Array.isArray(resultado)).toBe(true);
     });
 
     it("Si someArray es un string, arrojará error", () => {
