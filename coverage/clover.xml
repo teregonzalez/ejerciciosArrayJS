@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644523979565" clover="3.2.0">
-  <project timestamp="1644523979565" name="All files">
-    <metrics statements="125" coveredstatements="125" conditionals="54" coveredconditionals="54" methods="25" coveredmethods="25" elements="204" coveredelements="204" complexity="0" loc="125" ncloc="125" packages="1" files="12" classes="12"/>
+<coverage generated="1644527281619" clover="3.2.0">
+  <project timestamp="1644527281619" name="All files">
+    <metrics statements="134" coveredstatements="134" conditionals="56" coveredconditionals="56" methods="27" coveredmethods="27" elements="217" coveredelements="217" complexity="0" loc="134" ncloc="134" packages="1" files="13" classes="13"/>
     <file name="ejercicio1.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio1.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -49,6 +49,18 @@
       <line num="18" count="1" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
+    </file>
+    <file name="ejercicio13.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio13.js">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
     </file>
     <file name="ejercicio2.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio2.js">
       <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>

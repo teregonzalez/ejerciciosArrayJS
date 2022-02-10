@@ -13,7 +13,7 @@ describe('Función move', () => {
         //Assert
         expect(resultado).toEqual([4, 7, 5]);
     });
-    it('Si la función recibe no recibe un array, arrojará un error', () => {
+    it('Si la función no recibe un array, arrojará un error', () => {
         //Arrange
         const someArray = 345;
         const firstIndex = 2;
