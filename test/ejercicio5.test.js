@@ -12,9 +12,9 @@ describe("Función findSmallestAndLargestNumbers", () => {
         expect(resultado).toThrow("Error")
     });
 
-    it("Si la función recibe un array con dos elementos, arrojará un error", () => {
+    it("Si la función recibe un array con un elemento, arrojará un error", () => {
         //Arrange
-        const someArray = [3,4];
+        const someArray = [3];
 
         //Act
         const resultado = () => findSmallestAndLargestNumbers(someArray);

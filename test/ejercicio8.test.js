@@ -26,7 +26,19 @@ describe("Función alphabetize", () => {
 
         //Assert
         expect(resultado).toThrow("Error");
+     }); 
+     
+     it('Si la función recibe un array de un elemento, arrojará un error', () => {
+        //Arrange
+        const someArray = [1];
+
+        //Act
+        const resultado = () => alphabetize(someArray);
+
+        //Assert
+        expect(resultado).toThrow("Error");
      });  
+
 
      it("Alphabetize sin parametros va a arrojar un error", () => {
         //act and assert

@@ -4,9 +4,13 @@ const alphabetize = (someArray) => {
     if(!Array.isArray(someArray)){
         throw new Error("Error");
     }
+    if(someArray.length<2){
+        throw new Error("Error");
+    }
     const orderedArray = someArray.sort()
     return orderedArray.map(arreglos => arreglos.sort())
 }
+
 
 /*
 const jumbledAlphabetically = [

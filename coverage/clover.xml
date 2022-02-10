@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644439873513" clover="3.2.0">
-  <project timestamp="1644439873513" name="All files">
-    <metrics statements="90" coveredstatements="90" conditionals="40" coveredconditionals="40" methods="18" coveredmethods="18" elements="148" coveredelements="148" complexity="0" loc="90" ncloc="90" packages="1" files="8" classes="8"/>
+<coverage generated="1644512569364" clover="3.2.0">
+  <project timestamp="1644512569364" name="All files">
+    <metrics statements="92" coveredstatements="92" conditionals="42" coveredconditionals="42" methods="18" coveredmethods="18" elements="152" coveredelements="152" complexity="0" loc="92" ncloc="92" packages="1" files="8" classes="8"/>
     <file name="ejercicio1.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio1.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -108,13 +108,15 @@
       <line num="19" count="1" type="stmt"/>
     </file>
     <file name="ejercicio8.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio8.js">
-      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="5" count="2" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="3" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
+      <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

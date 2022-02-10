@@ -4,7 +4,7 @@ const findSmallestAndLargestNumbers = (someArray) => {
   if (!Array.isArray(someArray)) {
     throw new Error("Error");
   }
-  if (someArray.length < 3) {
+  if (someArray.length < 2) {
     throw new Error("Error");
   }
 
