@@ -1,5 +1,8 @@
 //Shift all numeric values to the beginning
 const sortTheArray = (someArray) => {
+    if(!Array.isArray(someArray)){
+        throw new Error("Error");
+    }
     let numberArray = []
     let otherArray = []
     someArray.forEach(element => { 
@@ -8,5 +11,9 @@ const sortTheArray = (someArray) => {
     return numberArray.concat(otherArray).sort();
     }
 
-console.log(sortTheArray(["b", 6, "a", "q", 7, 2])) 
+//console.log(sortTheArray(["b", 6, "a", "q", 7, 2])) 
 // [2, 6, 7, "a", "b", "q"]
+
+module.exports = {
+    sortTheArray
+}

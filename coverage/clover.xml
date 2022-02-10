@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644518240695" clover="3.2.0">
-  <project timestamp="1644518240695" name="All files">
-    <metrics statements="104" coveredstatements="104" conditionals="48" coveredconditionals="48" methods="22" coveredmethods="22" elements="174" coveredelements="174" complexity="0" loc="104" ncloc="104" packages="1" files="10" classes="10"/>
+<coverage generated="1644521461386" clover="3.2.0">
+  <project timestamp="1644521461386" name="All files">
+    <metrics statements="113" coveredstatements="113" conditionals="52" coveredconditionals="52" methods="24" coveredmethods="24" elements="189" coveredelements="189" complexity="0" loc="113" ncloc="113" packages="1" files="11" classes="11"/>
     <file name="ejercicio1.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio1.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -22,6 +22,18 @@
       <line num="4" count="2" type="stmt"/>
       <line num="7" count="3" type="stmt"/>
       <line num="12" count="1" type="stmt"/>
+    </file>
+    <file name="ejercicio11.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio11.js">
+      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
     </file>
     <file name="ejercicio2.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio2.js">
       <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
