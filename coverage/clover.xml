@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644512569364" clover="3.2.0">
-  <project timestamp="1644512569364" name="All files">
-    <metrics statements="92" coveredstatements="92" conditionals="42" coveredconditionals="42" methods="18" coveredmethods="18" elements="152" coveredelements="152" complexity="0" loc="92" ncloc="92" packages="1" files="8" classes="8"/>
+<coverage generated="1644515592218" clover="3.2.0">
+  <project timestamp="1644515592218" name="All files">
+    <metrics statements="95" coveredstatements="95" conditionals="42" coveredconditionals="42" methods="20" coveredmethods="20" elements="157" coveredelements="157" complexity="0" loc="95" ncloc="95" packages="1" files="9" classes="9"/>
     <file name="ejercicio1.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio1.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -114,9 +114,15 @@
       <line num="5" count="2" type="stmt"/>
       <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="3" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+    </file>
+    <file name="ejercicio9.js" path="/Users/teresagonzalez/Documents/ejerciciosArrayJS/src/ejercicio9.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

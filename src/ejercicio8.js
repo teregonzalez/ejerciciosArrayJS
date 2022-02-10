@@ -7,6 +7,7 @@ const alphabetize = (someArray) => {
     if(someArray.length<2){
         throw new Error("Error");
     }
+
     const orderedArray = someArray.sort()
     return orderedArray.map(arreglos => arreglos.sort())
 }

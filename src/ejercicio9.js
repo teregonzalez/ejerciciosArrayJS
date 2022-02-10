@@ -4,6 +4,8 @@ const findCommonWords = (firstArray, secondArray) => {
     //filter busca palabras en el segundo arreglo que cumplan con condición
 }
 
-const firstArray = ["dog", "rat", "parrot"]
-const secondArray = ["lizard", "rat", "cat"]
-console.log(findCommonWords(firstArray, secondArray)) // ["cat"]
+//console.log(findCommonWords(firstArray, secondArray)) // ["cat"]
+
+module.exports = {
+    findCommonWords
+}
