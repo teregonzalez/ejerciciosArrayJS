@@ -12,4 +12,32 @@ describe("Función findCommonWords", () => {
         //Assert
         expect(resultado).toEqual(["rat"]);
     });
+
+    it('La función al recibir un string en el primer parámetro, va a arrojar un error', () => {
+        //Arrange
+        const firstArray = "bear";
+        const secondArray = ["lizard", "rat", "cat"];
+
+        //Act
+        const resultado = () => findCommonWords(firstArray, secondArray);
+
+        //Assert
+        expect(resultado).toThrow("Error");
+    })
+
+    it('La función al recibir un string en el segundo parámetro, va a arrojar un error', () => {
+        //Arrange
+        const firstArray = ["lizard", "rat", "cat"];
+        const secondArray = "rabbit";
+
+        //Act
+        const resultado = () => findCommonWords(firstArray, secondArray);
+
+        //Assert
+        expect(resultado).toThrow("Error");
+    });
+    it("findCommonWords sin parametros va a arrojar un error", () => {
+        //act and assert
+        expect(() => findCommonWords()).toThrow("Error");
+    });
 });
