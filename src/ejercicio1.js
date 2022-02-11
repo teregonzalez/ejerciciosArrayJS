@@ -16,7 +16,7 @@ const shuffle = (someArray) => {
   }
   return someArray;
 }
-//console.log(shuffle([10, 12, 15]))
+
 module.exports = {
   shuffle
 };

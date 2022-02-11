@@ -15,6 +15,6 @@ module.exports = {
     move
 }
 
-console.log(move([4, 5, 7], 2, 1)) // [4, 7, 5]
-console.log(move([4, 5, 7], 0, 1)) // [ 5, 4, 7]
-console.log(move([4, 5, 7], 0, 2)) // [ 7, 5, 4]
+//console.log(move([4, 5, 7], 2, 1)) // [4, 7, 5]
+//console.log(move([4, 5, 7], 0, 1)) // [ 5, 4, 7]
+//console.log(move([4, 5, 7], 0, 2)) // [ 7, 5, 4]

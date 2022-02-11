@@ -15,5 +15,5 @@ module.exports = {
     buildArray
 }
 
-console.log(buildArray(["mon", "tue", "wed", "thur", "fri"], [1, 3, 4])) 
+//console.log(buildArray(["mon", "tue", "wed", "thur", "fri"], [1, 3, 4])) 
 // ["tue", "thur", "fri"]
