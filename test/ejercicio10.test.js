@@ -22,7 +22,7 @@ describe("Función containsAllElements", () => {
         const resultado = containsAllElements(firstArray, secondArray);
 
         //Assert
-        expect(resultado).toBe(true);
+        expect(resultado).toBe(false);
     })
     it('La función al recibir un string, retornará un error', () => {
         //Arrange
